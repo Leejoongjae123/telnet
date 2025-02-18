@@ -1,16 +1,27 @@
-import Hero from "@/components/hero";
-import ConnectSupabaseSteps from "@/components/tutorial/connect-supabase-steps";
-import SignUpUserSteps from "@/components/tutorial/sign-up-user-steps";
-import { hasEnvVars } from "@/utils/supabase/check-env-vars";
-
-export default async function Home() {
+import React from "react";
+import Header from "./components/Header";
+import PromotionDetails from "./components/PromotionDetails";
+import ContactForm from "./components/ContactForm";
+import { Divider } from "@heroui/react";
+import CarrierSelection from "./components/CarrierSelection";
+import PrivacyPolicy from "./components/PrivacyPolicy";
+import SubmitButton from "./components/SubmitButton";
+import ContactInfo from "./components/ContactInfo";
+import Banner from "./components/Banner";
+function InternetTVPromotion() {
   return (
-    <>
-      <Hero />
-      <main className="flex-1 flex flex-col gap-6 px-4">
-        <h2 className="font-medium text-xl mb-4">Next steps</h2>
-        {hasEnvVars ? <SignUpUserSteps /> : <ConnectSupabaseSteps />}
-      </main>
-    </>
+    <div className="flex overflow-hidden flex-col items-center w-[100vw] md:w-[50vw] bg-white h-full justify-between h-full">
+      <Header />
+      <PromotionDetails />
+      <Banner></Banner>
+      <Divider className="w-full h-1 bg-stone-300" />
+      <ContactForm />
+      {/* <CarrierSelection /> */}
+      <PrivacyPolicy />
+      <SubmitButton />
+      <ContactInfo />
+    </div>
   );
 }
+
+export default InternetTVPromotion;
