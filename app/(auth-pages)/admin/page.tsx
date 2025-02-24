@@ -18,7 +18,7 @@ export default async function Login(props: { searchParams: Promise<Message> }) {
           <Label htmlFor="password">비밀번호</Label>
         </div>
         <Input type="password" name="password" placeholder="" required />
-        <SubmitButton pendingText={<Spinner />} formAction={signInAction}>
+        <SubmitButton pendingText="로딩중..." formAction={signInAction}>
           로그인
         </SubmitButton>
         <FormMessage message={searchParams} />
