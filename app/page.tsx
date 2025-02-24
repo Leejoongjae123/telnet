@@ -10,7 +10,7 @@ import ContactInfo from "./components/ContactInfo";
 import Banner from "./components/Banner";
 function InternetTVPromotion() {
   return (
-    <div className="flex overflow-hidden flex-col items-center w-[100vw] md:w-[50vw] bg-white h-full justify-between h-full">
+    <div className="flex flex-col items-center w-[100vw] md:w-[50vw] bg-white justify-between h-full relative">
       <Header />
       <PromotionDetails />
       <Banner></Banner>
@@ -19,7 +19,9 @@ function InternetTVPromotion() {
       {/* <CarrierSelection /> */}
       <PrivacyPolicy />
       <SubmitButton />
-      <ContactInfo />
+      
+        <ContactInfo />
+      
     </div>
   );
 }
