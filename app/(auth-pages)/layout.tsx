@@ -16,7 +16,7 @@ export default async function Layout({
             
             
           </div>
-          {!hasEnvVars ? <EnvVarWarning /> : <HeaderAuth />}
+          <HeaderAuth></HeaderAuth>
         </div>
       </nav>
       {children}
