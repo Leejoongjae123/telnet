@@ -22,7 +22,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="w-full flex flex-col gap-10 justify-between items-center">
+    <div className="w-full flex flex-col gap-5 justify-between items-center">
       <ToastContainer
         position="top-center"
         autoClose={2000}
@@ -37,26 +37,26 @@ function ContactForm() {
         transition={Bounce}
 
       />
-      <div className="flex gap-4 md:gap-10 mt-1 md:mt-10 text-2xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px]">
+      <div style={{ fontFamily: 'GongGothicMedium' }} className="flex gap-2 md:gap-10 mt-1 md:mt-10 text-xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px]">
         <label htmlFor="name" className="w-1/3 ">
           이름
         </label>
         <input
           id="name"
           type="text"
-          className="w-4/5 bg-white rounded-xl border border-black border-solid h-[55px]"
+          className="w-4/5 bg-white rounded-xl border border-black border-solid h-10 md:h-[55px]"
           aria-label="이름"
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-      <div className="flex gap-4 md:gap-10 mt-1 md:mt-7 text-2xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px]">
+      <div style={{ fontFamily: 'GongGothicMedium' }} className="flex gap-2 md:gap-10 mt-1 md:mt-7 text-xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px]">
         <label htmlFor="contact" className="w-1/3">
           연락처
         </label>
         <input
           id="contact"
           type="tel"
-          className="w-4/5 bg-white rounded-xl border border-black border-solid h-[55px]"
+          className="w-4/5 bg-white rounded-xl border border-black border-solid h-10 md:h-[55px]"
           aria-label="연락처"
           onChange={(e) => setPhone(e.target.value)}
         />

@@ -17,7 +17,7 @@ function PrivacyPolicy() {
   const { isChecked, setIsChecked } = useAgreeStore();
 
   return (
-    <div className="flex gap-2 mt-16 max-w-full text-xl w-full max-md:mt-10 justify-center items-center">
+    <div className="flex gap-2 mt-4 md:mt-16 max-w-full text-xl w-full justify-center items-center">
       <div>
         <Checkbox
           id="privacyPolicy"
@@ -26,10 +26,10 @@ function PrivacyPolicy() {
             setIsChecked(!isChecked);
           }}
         />
-        <label htmlFor="privacyPolicy" className="flex-auto w-[254px]">
-          <span className="font-medium text-black">개인정보처리방침</span>{" "}
+        <label style={{ fontFamily: 'GongGothicMedium' }} htmlFor="privacyPolicy" className="flex-auto w-[254px]">
+          <span className="text-medium md:text-xl font-medium text-black">개인정보처리방침</span>{" "}
           <span
-            className="font-medium hover:cursor-pointer text-sky-700"
+            className="text-medium md:text-xl font-medium hover:cursor-pointer text-sky-700"
             onClick={onOpen}
           >
             [자세히보기]
@@ -37,7 +37,7 @@ function PrivacyPolicy() {
         </label>
       </div>
 
-      <Modal size="5xl" isOpen={isOpen} onOpenChange={onOpenChange}>
+      <Modal style={{ fontFamily: 'GongGothicMedium' }} size="5xl" isOpen={isOpen} onOpenChange={onOpenChange}>
         <ModalContent>
           {(onClose) => (
             <>
@@ -220,7 +220,9 @@ function PrivacyPolicy() {
               </ModalBody>
               <ModalFooter>
                 <Button
-                  color="primary"
+                  className="bg-amber-300 text-[#002738]"
+                  style={{  fontFamily: 'GongGothicMedium' }}
+                
                   onPress={() => {
                     setIsChecked(true);
                     onClose();
