@@ -77,7 +77,7 @@ function SubmitButton() {
       />
       <button
         onClick={handleSubmit}
-        className="px-8 py-2 text-xl md:text-[30px] flex items-center justify-center mt-4 rounded-xl w-fit whitespace-nowrap max-md:px-5 transition-transform hover:scale-105 font-['SBAggroB'] text-[#002748] complementary-bg h-[50px] md:h-[70px]"
+        className="px-8 py-2 text-xl md:text-[30px] flex items-center justify-center mt-4 rounded-xl w-fit whitespace-nowrap max-md:px-5 transition-transform hover:scale-105 font-['SBAggroB'] h-[50px] md:h-[70px] animate-background"
       >
         <span className="flex items-center justify-center">{isLoading ? <Spinner /> : "지원금 확인하기"}</span>
       </button>

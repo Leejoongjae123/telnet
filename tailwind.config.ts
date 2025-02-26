@@ -14,6 +14,15 @@ const config = {
   prefix: "",
   theme: {
     extend: {
+      animation: {
+        'background': 'background 1s step-end infinite',
+      },
+      keyframes: {
+        background: {
+          '0%, 49%': { backgroundColor: '#FF9F1C' },
+          '50%, 100%': { backgroundColor: '#FCD34D' },
+        },
+      },
     },
   },
   plugins: [require("tailwindcss-animate"), heroui()],

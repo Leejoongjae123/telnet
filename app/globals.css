@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: 'PartialSansKR';
-  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-1@1.1/PartialSansKR-Regular.woff2') format('woff2');
+  src: url('/fonts/PartialSansKR-Regular.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -25,44 +25,25 @@
 }
 
 @keyframes colorChange {
-  0% { color: #1E96FC; }
-  50% { color: #FF9F1C; }
-  100% { color: #1E96FC; }
+  0%, 100% {
+    color: #1E96FC;
+  }
+  50% {
+    color: #FF9F1C;
+  }
 }
 
 .text-animate {
-  animation: colorChange 2s infinite;
+  animation: colorChange 1s steps(2) infinite;
 }
 
 .contact-number {
   color: #002748;
-  transition: color 0.2s;
-  animation: colorChange 2s ease-in-out infinite;
+  transition: none;
+  animation: colorChange 1s steps(2) infinite;
 }
 
 .contact-number:hover {
   color: #FF7B00;
 }
 
-@keyframes colorChange {
-  0%, 100% {
-    color: #002748;
-  }
-  50% {
-    color: #FF7B00;
-  }
-}
-@keyframes complementaryBackground {
-  0%, 100% { 
-    background-color: #FFD700;  /* 골드 */
-    color: #4B0082;            /* 인디고 (골드의 보색) */
-  }
-  50% { 
-    background-color: #4B0082;  /* 인디고 */
-    color: #FFD700;            /* 골드 */
-  }
-}
-
-.complementary-bg {
-  animation: complementaryBackground 4s infinite;
-}

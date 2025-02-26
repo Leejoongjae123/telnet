@@ -37,8 +37,8 @@ function ContactForm() {
         transition={Bounce}
 
       />
-      <div style={{ fontFamily: 'GongGothicMedium' }} className="flex gap-2 md:gap-10 mt-1 md:mt-10 text-xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px]">
-        <label htmlFor="name" className="w-1/3 ">
+      <div style={{ fontFamily: 'GongGothicMedium' }} className="flex px-6 md:px-12 gap-2 md:gap-10 mt-1 md:mt-10 text-xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px]">
+        <label htmlFor="name" className="w-[80px] md:w-[120px] text-left">
           이름
         </label>
         <input
@@ -49,8 +49,8 @@ function ContactForm() {
           onChange={(e) => setName(e.target.value)}
         />
       </div>
-      <div style={{ fontFamily: 'GongGothicMedium' }} className="flex gap-2 md:gap-10 mt-1 md:mt-7 text-xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px]">
-        <label htmlFor="contact" className="w-1/3">
+      <div style={{ fontFamily: 'GongGothicMedium' }} className="flex gap-2 md:gap-10 mt-1 md:mt-7 text-xl  md:text-3xl font-bold text-black justify-between items-center text-center w-[90%] md:w-full h-[55px] px-6 md:px-12">
+        <label htmlFor="contact" className="w-[80px] md:w-[120px] text-left">
           연락처
         </label>
         <input
